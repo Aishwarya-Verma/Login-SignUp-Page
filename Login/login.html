@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="http://v4-alpha.getbootstrap.com/favicon.ico">
+
+  <title>Login</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="http://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="http://v4-alpha.getbootstrap.com/examples/signin/signin.css" rel="stylesheet">
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="http://v4-alpha.getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function fb() {
+      window.open("https://www.facebook.com/", "_blank");
+    }
+
+    function google() {
+      window.open("https://accounts.google.com/signin", "_blank");
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <a href="#" class="close-thik"></a>
+    <form class="form-login">
+      <div id="write" class="content">
+        <h2 class="login-heading">Login</h2>
+        <div class="userin">
+          <input type="email" id="Email" class="getin" placeholder="User Name">
+          <input type="password" id="Password" class="getin" placeholder="Password">
+        </div>
+        <div class="check">
+          <input type="checkbox" name="remember" class="rem">
+          <label class="rem">Remember me</label>
+          <a href="#">Forgot Password</a>
+        </div>
+        <button class=" log btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        <div>
+          <div class="login-or">
+            <hr class="hr-or">
+            <span class="span-or">OR</span>
+          </div>
+        </div>
+        <div class="fbg">
+          <button class="btn btn-lg btn-primary btn-block fb" type="button" onclick="fb()">Login with Facebook</button>
+          <button class="btn btn-lg btn-primary btn-block gogl" type="button" onclick="google()">Login with Google</button>
+        </div>
+      </div>
+      <hr class="hl">
+      <div id="click" class="create">
+        <div class="vl"></div>
+        <div class="close-container col-auto text-right">
+          <div class="leftright"></div>
+          <div class="rightleft"></div>
+        </div>
+        <p>If you don't already have an account click the button below to create your account.</p>
+        <button class="btn btn-lg btn-primary btn-block acc" type="submit">Create Account</button>
+        <div>
+          <div class="login-or">
+            <hr class="hr-or">
+            <span class="span-or">OR</span>
+          </div>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block fbb" type="button" onclick="fb()">Sign Up with Facebook</button>
+        <button class="btn btn-lg btn-primary btn-block gogl" type="button" onclick="google()">Sign Up with Google</button>
+      </div>
+    </form>
+
+
+  </div> <!-- /container -->
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+
+</body>
+
+</html>
